@@ -1,0 +1,28 @@
+{
+    "name": "denbog/oauth2-wellcomesid",
+    "description": "WellcomesId OAuth 2.0 support for the PHP League's OAuth 2.0 Client",
+    "autoload": {
+        "psr-4": {
+            "Denbog\\Oauth2Wellcomesid\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Denis Bogachev"
+        }
+    ],
+    "keywords": [
+        "php",
+        "wellcomes",
+        "api",
+        "oauth",
+        "oauth2",
+        "client",
+        "authorization",
+        "authentication"
+    ],
+    "require": {
+        "league/oauth2-client": "^2.0",
+        "guzzlehttp/guzzle": "^7.2"
+    }
+}
