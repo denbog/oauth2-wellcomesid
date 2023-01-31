@@ -45,7 +45,8 @@ class WellcomesId extends AbstractProvider
     {
         return [
             'Authorization' => 'Bearer ' . $token,
-            'Accept' => '*/*'
+            'Accept' => 'application/json',
+            'Content-Type' => 'application/json'
         ];
     }
 
@@ -82,9 +83,6 @@ class WellcomesId extends AbstractProvider
             $this->getResourceOwnerUrl(), 
             $token,
             [
-                'headers' => [
-                    'Content-Type' => 'application/json'
-                ],
                 'body' => json_encode([
                     'user' => $updateOwnerData
                 ])
